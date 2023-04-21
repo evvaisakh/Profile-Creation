@@ -1,0 +1,358 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: lightslategrey;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+#logo{
+    color: white;
+    font-size: 40px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#logo:hover{
+    color: dodgerblue;
+    transition: .5s;
+}
+
+span{
+    color: dodgerblue;
+}
+
+header h2 span:hover{
+    color: white;
+    transition: .5s;
+}
+
+#navbar{
+    background-color: lightslategray;
+    position: fixed;
+    top: -50px;
+    width: 100%;
+    transition: top 0.3s;  
+}
+
+#navbar a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#navbar a:hover{
+    background-color: white;
+    color: black;
+    transition: .5s;
+}
+
+.home{
+    height: 100vh;
+    width: 100%;
+    background-image: url('../images/pexels-pixabay-268533.jpg');
+    background-size: cover;
+    background-position: fixed;
+    background-repeat: no-repeat;
+}
+
+h1{
+    color: darkred;
+    font-size: 75px;
+    margin: 20px 60px 20px;
+}
+
+h3{
+    color: darkorange;
+    font-size: 25px;
+    margin: 0px 60px 50px;
+}
+
+h4{
+    color: forestgreen;
+    letter-spacing: 2px;
+    font-size: 20px;
+    padding: 12% 5% 0%;
+}
+
+.mail form{
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+    padding-left: 5%;
+    background-image: none;
+}
+
+.mail form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 30px;
+}
+
+.mail form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    padding: 9px 30px;
+    border-radius: 30px;
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+    top: 6px;
+    right: 6px;
+    bottom: 6px;
+}
+
+.mail form input:last-child:hover{
+    background-color: white;
+    color: blue;
+    transition: .5s;
+}
+
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: steelblue;
+}
+
+.about img{
+    height: auto;
+    width: 500px;
+}
+
+.about-text{
+    width: 550px;
+}
+
+.about-page{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h2{
+    color: goldenrod;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.about-text p{
+    color: dimgray;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+
+.skills{
+    width: 100%;
+    padding: 50px;
+    background-color: palegreen;
+}
+
+.contents{
+    padding-left: 40%;
+}
+
+.contents h2{
+    color: indigo;
+    letter-spacing: 1px;
+    font-size: 50px;
+    text-transform: capitalize;
+    padding: 10px 0px 10px;
+}
+
+.contents ul li{
+    padding: 10px;
+    color: maroon;
+    font-size: 25px;
+}
+
+.educate{
+    width: 100%;
+    padding-left: 10%;
+    background-color: darkslateblue;
+    padding-bottom: 10%;
+}
+
+.educate h2{
+    color: palegreen;
+    letter-spacing: 1px;
+    font-size: 50px;
+    text-transform: capitalize;
+    padding: 60px 0px 10px;
+}
+
+.educate dl dt{
+    color: aqua;
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+.educate dl dd{
+    color: bisque;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.contact{
+    height: 100%;
+    width: 100%;
+    background-color: cornflowerblue;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 80px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: none;
+}
+
+.contact form{
+    width: 650px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: darkviolet;
+    flex-wrap: wrap;
+}
+
+.contact form h2{
+    color: white;
+    font-size: 50px;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+}
+
+.contact form input{
+    width:290px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid red;
+}
+
+.contact form input::placeholder{
+    color: white;
+}
+
+.contact form #lastname,
+.contact form #mobile{
+    margin-left: 20px;
+}
+
+.contact form #textarea{
+    border-bottom: 2px solid red;
+    color: white;
+    font-weight: 200px;
+    font-size: 15px;
+    padding: 10px;
+    min-width: 600px;
+    min-height: 80px;
+    max-height: 80px;
+}
+
+#textarea::-webkit-scrollbar{
+    width: 1em;
+}
+
+#textarea::-webkit-scrollbar-thumb{
+    background-color:white;
+}
+
+.contact form #button{
+    border: none;
+    background: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600px;
+    font-size: 20px;
+    color: black;
+    width: 100px;
+    padding: 0;
+    margin-right: 500px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.contact form #button:hover{
+    color: dodgerblue;
+    opacity: 0.5;
+}
+
+footer{
+    background-color: white;
+    color: black;
+    height: 3.5em;
+}
+footer h5{
+    text-align: center;
+}
+
+.fa{
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover{
+    opacity: 0.7;
+}
+
+.fa-facebook{
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter{
+    background: #55ACEE;
+    color: white;
+}
+  
+.fa-google{
+    background: #dd4b39;
+    color: white;
+}
+  
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-instagram{
+    background: #125688;
+    color: white;
+}
